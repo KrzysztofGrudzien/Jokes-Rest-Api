@@ -11,7 +11,6 @@ const Wrapper = () => {
             <Header />
             <Main />
             <Footer />
-            <div className={styles.wrapper__pageFooter}></div>
         </div>
     )
 }
