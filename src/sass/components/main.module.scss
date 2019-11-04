@@ -1,3 +1,76 @@
+@import '../utils/variables.scss';
+
+
 .main {
     grid-area: main;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.app {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__title {
+        border-bottom: 1px solid darken($grey, 70%);
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 0 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__image {
+        background-image: url('../../assets/images/chuck.png');
+        background-size: cover;
+        height: 500px;
+        width: 35%;
+    }
+
+    &__data {
+        width: 65%;
+    }
+
+    &__DataList {
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    &__DataItem {
+        padding: 10px 0;
+    }
+}
+
+.description {
+    display: flex;
+
+    * > p {
+        margin: 20px 0;
+    }
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    width: 50%;
+
+    &__title {
+        font-size: 2.5rem;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+    }
+
+    &__descriptionLink {
+        border: 1px solid darken($grey, 70%);
+        border-radius: 5px;
+        color: currentColor;
+        padding: 5px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 }
