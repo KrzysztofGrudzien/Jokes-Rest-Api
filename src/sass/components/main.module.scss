@@ -34,6 +34,15 @@
     &__data {
         width: 65%;
     }
+
+    &__DataList {
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    &__DataItem {
+        padding: 10px 0;
+    }
 }
 
 .description {

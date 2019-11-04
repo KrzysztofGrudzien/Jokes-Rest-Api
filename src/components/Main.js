@@ -13,6 +13,11 @@ const Main = () => {
                         <button className={stylesBtn.btn}>3</button>
                         <button className={stylesBtn.btn}>5</button>
                     </div>
+                    <ul className={styles.app__DataList}>
+                        <li className={styles.app__DataItem}>The Chuck Norris app existed even before slack existed.</li>
+                        <li className={styles.app__DataItem}>The Chuck Norris app existed even before slack existed.</li>
+                        <li className={styles.app__DataItem}>The Chuck Norris app existed even before slack existed.</li>
+                    </ul>
                 </section>
             </div>
             <div className={styles.description}>
