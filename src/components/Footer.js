@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from '../sass/components/footer.module.scss';
 const Footer = () => {
     return (
-        <footer>Footer</footer>
+        <footer className={styles.footer}>Footer</footer>
     )
 }
 

@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from '../sass/components/header.module.scss';
 const Header = () => {
     return (
-        <header>Header</header>
+        <header className={styles.header}>Header</header>
     )
 }
 

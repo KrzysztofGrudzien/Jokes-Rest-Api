@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from '../sass/components/main.module.scss';
 const Main = () => {
     return (
-        <main>Main</main>
+        <main className={styles.main}>Main</main>
     )
 }
 
