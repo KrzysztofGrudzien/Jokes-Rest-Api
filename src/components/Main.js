@@ -1,11 +1,19 @@
 import React from 'react';
 import styles from '../sass/components/main.module.scss';
+import stylesBtn from '../sass/components/buttons.module.scss';
 const Main = () => {
     return (
         <main className={styles.main}>
             <div className={styles.app}>
                 <div className={styles.app__image}></div>
-                <div className={styles.app__data}></div>
+                <section className={styles.app__data}>
+                    <h1 className={styles.app__title}>How many jokes you want to see?</h1>
+                    <div className={styles.app__buttons}>
+                        <button className={stylesBtn.btn}>1</button>
+                        <button className={stylesBtn.btn}>3</button>
+                        <button className={stylesBtn.btn}>5</button>
+                    </div>
+                </section>
             </div>
             <div className={styles.description}>
                 <article className={styles.article}>
@@ -19,6 +27,7 @@ const Main = () => {
                         <a className={styles.article__descriptionLink} href="https://kursreacta.slack.com/oauth/812452117633.ac82992f2c3ed4fd084b0f3a52f7c21ced7e38eb1f982cbe2c2255fa732c2ecf" target="_blank">add to slack</a>
                         <p>Installation takes just 1 minute!</p>
                         <p>Help: From within slack, you can just type /chuck help for some extra information on how to use the app.</p>
+                        <p>Source: https://api.chucknorris.io</p>
                     </div>
                 </article>
                 <article className={styles.article}>
