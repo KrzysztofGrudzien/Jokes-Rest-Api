@@ -7,6 +7,35 @@
     width: 90%;
 }
 
+.app {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__title {
+        border-bottom: 1px solid darken($grey, 70%);
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 0 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__image {
+        background-image: url('../../assets/images/chuck.png');
+        background-size: cover;
+        height: 500px;
+        width: 35%;
+    }
+
+    &__data {
+        width: 65%;
+    }
+}
+
 .description {
     display: flex;
 
@@ -28,11 +57,11 @@
     }
 
     &__descriptionLink {
+        border: 1px solid darken($grey, 70%);
+        border-radius: 5px;
         color: currentColor;
+        padding: 5px 20px;
         text-decoration: none;
         text-transform: uppercase;
-        border: 1px solid darken($grey, 70%);
-        padding: 5px 20px;
-        border-radius: 5px;
     }
 }
