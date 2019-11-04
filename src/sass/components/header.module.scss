@@ -2,12 +2,13 @@
 
 .header {
     grid-area: header;
-    margin: 30px auto 0 auto;
+    margin: 40px auto 0 auto;
     width: 90%;
 
     &__box {
         display: flex;
         justify-content: space-between;
+        font-size: 0.8rem;
     }
 
     &__link {
@@ -19,6 +20,7 @@
         border-top: 1px solid darken($grey, 70%);
         font-family: 'Playfair Display', serif;
         font-size: 4rem;
+        margin: 0;
         text-transform: uppercase;
     }
 
