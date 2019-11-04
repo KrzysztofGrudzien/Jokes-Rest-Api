@@ -1,3 +1,31 @@
+@import '../utils/variables.scss';
+
 .header {
     grid-area: header;
+    margin: 40px auto 0 auto;
+    width: 90%;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+    }
+
+    &__link {
+        color: currentColor;
+        text-decoration: none;
+    }
+
+    &__title {
+        border-top: 1px solid darken($grey, 70%);
+        font-family: 'Playfair Display', serif;
+        font-size: 4rem;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    &__titleDescription {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
 }
