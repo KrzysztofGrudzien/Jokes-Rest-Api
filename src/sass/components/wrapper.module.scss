@@ -4,6 +4,13 @@
     border-radius: 2px;
     box-shadow: 2px 2px 10px rgba(0,0,0,.35);
     background-image: url('../../assets/images/bg.jpg');
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 100vh;
     margin: 100px auto;
     position: relative;
