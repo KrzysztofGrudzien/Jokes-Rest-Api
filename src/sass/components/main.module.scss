@@ -1,4 +1,5 @@
 @import '../utils/variables.scss';
+@import '../utils/animation.scss';
 
 
 .main {
@@ -35,13 +36,20 @@
         width: 65%;
     }
 
+    &__DataItem {
+        padding: 10px 0;
+    }
+
     &__DataList {
         list-style: none;
         margin-top: 20px;
     }
 
-    &__DataItem {
-        padding: 10px 0;
+    &__DataList2 {
+        list-style: none;
+        margin-top: 20px;
+	    -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	    animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
     }
 }
 
