@@ -6,7 +6,8 @@ import styles from '../sass/components/main.module.scss';
 class Main extends React.Component {
     state = {
         jokes: [],
-        number: 0
+        number: 0,
+        isActive: false
     }
 
     handlePassNumber = (number = this.state.number) => {
@@ -23,7 +24,8 @@ class Main extends React.Component {
             .then(response => response.json())
             .then(jokes => {
                 this.setState({
-                    jokes: jokes.value
+                    jokes: jokes.value,
+                    isActive: !this.state.isActive
                 })
             })
             .catch(error => console.log(error))
@@ -39,7 +41,8 @@ class Main extends React.Component {
             .then(response => response.json())
             .then(jokes => {
                 this.setState({
-                    jokes: jokes.value
+                    jokes: jokes.value,
+                    isActive: !this.state.isActive
                 })
             })
             .catch(error => console.log(error))
@@ -55,14 +58,17 @@ class Main extends React.Component {
             .then(response => response.json())
             .then(jokes => {
                 this.setState({
-                    jokes: jokes.value
+                    jokes: jokes.value,
+                    isActive: !this.state.isActive
                 })
             })
             .catch(error => console.log(error))
     }
 
     render() {
-        const jokes = this.state.jokes;
+        const jokes = this.state.jokes,
+            active = this.state.isActive;
+
         return (
             <main className={styles.main}>
                 <div className={styles.app}>
@@ -74,7 +80,7 @@ class Main extends React.Component {
                             <Button click={this.handleFetchData2} number={this.handlePassNumber(5)} />
                             <Button click={this.handleFetchData3} number={this.handlePassNumber(10)} />
                         </div>
-                        {jokes ? <Jokes jokes={jokes} /> : jokes}
+                        {jokes ? <Jokes jokes={jokes} active={active} /> : jokes}
                     </section>
                 </div>
                 <div className={styles.description}>
