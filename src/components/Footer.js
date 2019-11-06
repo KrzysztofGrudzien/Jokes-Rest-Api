@@ -6,8 +6,15 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <p className={styles.footer__copyrights}>
-                <a className={styles.footer__link} href="http://criscode.pl" target="_blank"><img src={logo} alt="logo of author" /></a>
-                <a className={styles.footer__link} href="https://github.com/KrzysztofGrudzien/Jokes-Rest-Api" target="_blank"><img src={iconGitHub} /></a>
+                <a className={styles.footer__link}
+                    href="http://criscode.pl" target="_blank">
+                    <img src={logo} alt="logo of author" />
+                </a>
+                <a className={styles.footer__link}
+                    href="https://github.com/KrzysztofGrudzien/Jokes-Rest-Api"
+                    target="_blank">
+                    <img src={iconGitHub} />
+                </a>
             </p>
         </footer>
     )

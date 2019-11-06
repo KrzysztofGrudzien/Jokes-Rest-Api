@@ -1,4 +1,5 @@
 @import '../utils/variables.scss';
+@import '../utils/animation.scss';
 
 
 .main {
@@ -35,18 +36,26 @@
         width: 65%;
     }
 
+    &__DataItem {
+        padding: 10px 0;
+    }
+
     &__DataList {
         list-style: none;
         margin-top: 20px;
     }
 
-    &__DataItem {
-        padding: 10px 0;
+    &__DataList2 {
+        list-style: none;
+        margin-top: 20px;
+	    -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	    animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
     }
 }
 
 .description {
     display: flex;
+    flex-wrap: wrap;
 
     * > p {
         margin: 20px 0;
@@ -72,5 +81,11 @@
         padding: 5px 20px;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    &__link {
+        color: currentColor;
+        display: inline-block;
+        padding-left: 10px;
     }
 }

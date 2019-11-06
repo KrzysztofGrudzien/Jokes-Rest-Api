@@ -10,7 +10,14 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.header__box}>
-                <a className={styles.header__link} href="https://api.chucknorris.io" target="_blank">https://api.chucknorris.io</a>
+                <a className={styles.header__link}
+                    href="https://api.chucknorris.io"
+                    target="_blank">https://api.chucknorris.io
+                </a>
+                <a className={styles.header__link}
+                    href="http://www.icndb.com/api/"
+                    target="_blank">http://www.icndb.com/api/
+                </a>
                 <span>{getData()}</span>
             </div>
             <h1 className={styles.header__title}>jokes news</h1>
