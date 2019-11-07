@@ -88,6 +88,7 @@ class Main extends React.Component {
                         <h2 className={styles.article__title}>From author</h2>
                         <div className={styles.article__description}>
                             <p>Hi there, I found 2 popular API bound with Chuck Norris jokes. It the pend on the situation in which one of them you will be used. For this project, I used THE LINK BELOW this API because the first one is a little bit poor and I couldn't do what I wanted.</p>
+                            <p>WARNING - Almost, all content on this website come from external websites 😜. In this project I created fetching data from API and displaying them. 😉</p>
                             <p>Source:
                                 <a className={styles.article__link}
                                     href="http://www.icndb.com/api/" target="_blank">http://www.icndb.com/api/
@@ -127,7 +128,7 @@ class Main extends React.Component {
                         </div>
                     </article>
                     <article className={styles.article}>
-                        <h2 className={styles.article__title}>facebook messanger</h2>
+                        <h2 className={styles.article__title}>facebook messenger</h2>
                         <p>The Chuck Norris app is also on Facebook Messenger. Click the Message Us button below to start a conversation.</p>
                         <p>You can simply ask a random joke by typing `hi, tell me a joke `. To get help to get started type `help`.</p>
                         <p>Contact: Feel free to tweet ideas, suggestions, help requests and similar to @matchilling or drop me a line at m@matchilling.com</p>
