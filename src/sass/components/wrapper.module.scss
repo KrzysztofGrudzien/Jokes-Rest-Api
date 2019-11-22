@@ -13,9 +13,22 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 100%;
     margin: 100px auto;
+
+    @media (min-width: 200px) and (max-width: 1024px) {
+        margin: 10px auto;
+    }
+
+    @media (min-width: 200px) and (max-width: 767px) {
+        grid-template-rows: 100px 1fr 30px;
+    }
+
     position: relative;
     width: 1280px;
     z-index: 10;
+
+    @media (min-width: 200px) and (max-width: 1024px) {
+        width: 100%;
+    }
     
     &__pageOne {
         border-radius: 2px;
@@ -28,6 +41,10 @@
         transform: rotate(-0.5deg);
         width: 100%;
         z-index: -1;
+
+        @media (min-width: 200px) and (max-width: 499px) {
+            display: none;
+        }
     }
 
     &__pageTwo {
@@ -41,5 +58,9 @@
         transform: rotate(0.5deg);
         width: 100%;
         z-index: -10;
+
+        @media (min-width: 200px) and (max-width: 499px) {
+            display: none;
+        }
     }
 }

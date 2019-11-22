@@ -19,6 +19,10 @@
         font-weight: 300;
         padding: 0 0 10px 0;
         text-transform: uppercase;
+
+        @media (min-width: 200px) and (max-width: 767px) {
+            font-size: 1.1rem;
+        }
     }
 
     &__buttons {
@@ -33,29 +37,38 @@
     &__image {
         background-image: url('../../assets/images/chuck.png');
         background-size: cover;
-        height: 500px;
+        background-repeat: no-repeat;
+        min-height: 500px;
         width: 35%;
 
-        @media (min-width: 600px) and (max-width: 1024px) {
-            height: 500px;
-            width: 50%;
+        @media (min-width: 200px) and (max-width: 499px) {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 300px;
         }
 
-        @media (min-width: 200px) and (max-width: 599px) {
-            height: 500px;
+        @media (min-width: 768px) and (max-width: 1023px) {
+            min-height: 500px;
+            width: 45%;
+        }
+
+        @media (min-width: 200px) and (max-width: 767px) {
             width: 100%;
         }
     }
 
     &__data {
         width: 65%;
-        @media (min-width: 600px) and (max-width: 1024px) {
-            height: 500px;
-            width: 50%;
+
+        @media (min-width: 200px) and (max-width: 767px) {
+            width: 100%;
         }
 
-        @media (min-width: 200px) and (max-width: 599px) {
-            width: 100%;
+        @media (min-width: 768px) and (max-width: 1023px) {
+            min-height: 500px;
+            padding-left: 10px;
+            width: 55%;
         }
     }
 
@@ -91,7 +104,7 @@
     padding-right: 20px;
     width: 50%;
 
-    @media (min-width: 200px) and (max-width: 599px) {
+    @media (min-width: 200px) and (max-width: 767px) {
         width: 100%;
     }
 
@@ -99,6 +112,11 @@
         font-size: 2.5rem;
         font-family: 'Playfair Display', serif;
         text-transform: uppercase;
+
+        @media (min-width: 200px) and (max-width: 767px) {
+            font-size: 1.8rem;
+            text-align: center;
+        }
     }
 
     &__descriptionLink {
